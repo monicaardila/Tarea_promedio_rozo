@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    background-color: #050967;
+    background-image: linear-gradient(160deg, #050967 0%, #09ef17 100%);
+    display: flex;
+    justify-content: space-around;
+}
+.title,main{
+    width: 50%;
+}
+.title{
+    text-shadow: 4px 4px 4px green;
+    display: flex;
+    align-items: center;
+    position:absolute;
+    left: 4%;
+    top: 50%;
+}
+main{
+    background: #24303c;
+    box-shadow: 25px 5px 5px  orange;
+    border-radius: 20px;
+    width: 500px;
+    height: 650px;
+    margin: 1em auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:left;
+    position: relative;
+    overflow: hidden;
+    left: 10%;
+}
+main::before {
+    content: "";
+    width:100%;
+    height: 5px;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #24303c;
+    box-shadow: 100px 0 yellow inset,
+                200px 0 red inset,
+                300px 0 blue inset,
+                400px 0 lime inset,
+                500px 0 orange inset,
+
+                400px 645px orange,
+                300px 645px lime,
+                200px 645px blue,
+                100px 645px red,
+                0 645px yellow;             
+}
+.info{
+    width: 400px;
+    padding: 30px;
+    margin:auto;
+    margin-top:1px;
+    border-radius: 4px;
+    font-family: 'calabri';
+    color: white;
+    left:50% ;
+}
+.info h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.controls{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+.button{
+    width: 100%;
+    height: 50px;
+    padding: 12px; 
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    background-color:red;
+    color: white;
+    font-family: arial;
+    font-size: 16px;
+}
+.button:hover{
+    background-color: blue;
+    color: white;
+}
